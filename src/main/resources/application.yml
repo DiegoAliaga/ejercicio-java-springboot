@@ -26,5 +26,5 @@ app:
     passwordRegex: "^[A-Za-z]{4,8}[0-9]{1,3}$"
     telefonoRegex: "^\\d{9}$"
   jwt:
-    secret: MiClaveSuperSecretaParaNisum2026MiClaveSuperSecreta
+    secret: test-jwt-secret-ojala-guardarlo-en-vault
     expiration: 86400000
