@@ -11,7 +11,24 @@
 | Spring Boot | 3.5.14 |
 
 #### Script Sql
-Se ejecuta automaticamente al levantar el proyecto
+Se ejecuta automaticamente al levantar el proyecto,
+
+Base de Datos
+
+La aplicación utiliza H2 en memoria para facilitar su ejecución y evaluación.
+
+Las tablas generadas son:
+
+USUARIO
+TELEFONOS
+
+La relación es:
+
+USUARIO (1) ---- (N) TELEFONOS
+
+La estructura SQL se encuentra en:
+
+/resources/script.sql
 
 ### Ejecuta test
 En la carpeta del proyecto abrir la consola y ejecutar el comando.
