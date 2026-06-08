@@ -35,7 +35,7 @@ Para  poder  ejecutar el proyecto  se  debe  ir a la  carpeta ejercicio-java-spr
 
 http://localhost:8080/h2-console
 ```sh
-JDBC URL: jdbc:h2:mem:testdb
+JDBC URL: jdbc:h2:mem:usuariosdb
 usuario: sa
 contraseña: pass
 ```
