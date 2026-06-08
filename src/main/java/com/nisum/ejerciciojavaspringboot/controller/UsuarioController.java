@@ -1,5 +1,6 @@
 package com.nisum.ejerciciojavaspringboot.controller;
 
+
 import com.nisum.ejerciciojavaspringboot.controller.dto.ConsultaUsuarioResponseDto;
 import com.nisum.ejerciciojavaspringboot.controller.dto.NuevoUsuarioRequestDto;
 import com.nisum.ejerciciojavaspringboot.controller.dto.NuevoUsuarioResponseDto;
@@ -9,13 +10,12 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
+import java.util.UUID;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.UUID;
 
 @Tag(name = "Desafio Java Nisum", description = "API RestFul para gestion de Usuarios")
 @RestController
