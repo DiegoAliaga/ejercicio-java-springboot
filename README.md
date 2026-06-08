@@ -143,6 +143,3 @@ curl --location 'http://localhost:8080/api/v1.0/usuarios/consultar/d0b8ad80-619a
 }
 ```
 
-### Diagrama de flujo
-
-![diagrama de flujo ms-user](https://github.com/CarlosConcha/ms-user/blob/main/diagrama_flujo.jpg)
