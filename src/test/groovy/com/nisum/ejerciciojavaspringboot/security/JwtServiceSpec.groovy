@@ -1,7 +1,6 @@
 package com.nisum.ejerciciojavaspringboot.security
 
 import com.nisum.ejerciciojavaspringboot.config.JwtProperties
-import com.nisum.ejerciciojavaspringboot.security.JwtService
 import spock.lang.Specification
 
 class JwtServiceSpec extends Specification{
@@ -20,7 +19,7 @@ class JwtServiceSpec extends Specification{
         given:
 
         jwtProperties.getSecret() >>
-                "MiClaveSuperSecretaParaNisum2026MiClaveSuperSecreta"
+                "test-jwt-secret-ojala-guardarlo-en-vault"
 
         jwtProperties.getExpiration() >>
                 86400000L

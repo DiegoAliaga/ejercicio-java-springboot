@@ -30,9 +30,7 @@ public class UsuarioController {
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "Usuario encontrado"),
             @ApiResponse(responseCode = "404", description = "Usuario no encontrado."),
-            @ApiResponse(responseCode = "401", description = "Token Invalido."),
-            @ApiResponse(responseCode = "403", description = "Clave secreta demasiado debil."),
-            @ApiResponse(responseCode = "409", description = "Correo ya se Encuentra Registrado.")})
+            @ApiResponse(responseCode = "500", description = "Error interno del servidor.")})
     @GetMapping(value = "/consultar/{idUsuario}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ConsultaUsuarioResponseDto> consultarUsuario(@PathVariable UUID idUsuario) {
         return ResponseEntity
@@ -44,7 +42,8 @@ public class UsuarioController {
     @ApiResponses({
             @ApiResponse(responseCode = "201", description = "Usuario Creado Correctamente."),
             @ApiResponse(responseCode = "400", description = "Valores de entrada incorrectos/invalidos."),
-            @ApiResponse(responseCode = "409", description = "Correo ya se Encuentra Registrado.")})
+            @ApiResponse(responseCode = "409", description = "Correo ya se Encuentra Registrado."),
+            @ApiResponse(responseCode = "500", description = "Error interno del servidor.")})
     @PostMapping(value = "/crear", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<NuevoUsuarioResponseDto> crearUsuario(@Valid @RequestBody NuevoUsuarioRequestDto usuario) {
         return ResponseEntity

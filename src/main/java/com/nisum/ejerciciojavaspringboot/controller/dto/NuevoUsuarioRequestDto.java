@@ -1,14 +1,14 @@
 package com.nisum.ejerciciojavaspringboot.controller.dto;
 
+
 import com.nisum.ejerciciojavaspringboot.service.dto.TelefonoDto;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
+import java.util.List;
 import lombok.Data;
 import lombok.NonNull;
-
-import java.util.List;
 
 @Data
 public class NuevoUsuarioRequestDto {

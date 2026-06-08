@@ -1,5 +1,6 @@
 package com.nisum.ejerciciojavaspringboot.service;
 
+
 import com.nisum.ejerciciojavaspringboot.config.ValidacionesProperties;
 import com.nisum.ejerciciojavaspringboot.constant.Constantes;
 import com.nisum.ejerciciojavaspringboot.controller.dto.ConsultaUsuarioResponseDto;
@@ -12,6 +13,9 @@ import com.nisum.ejerciciojavaspringboot.mapper.UsuarioMapper;
 import com.nisum.ejerciciojavaspringboot.repository.UsuarioRepository;
 import com.nisum.ejerciciojavaspringboot.security.JwtService;
 import com.nisum.ejerciciojavaspringboot.service.dto.TelefonoDto;
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.UUID;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,13 +23,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
-import java.util.List;
-import java.util.UUID;
 
-/**
- *
- */
 @Service
 @RequiredArgsConstructor
 public class UsuarioServiceImpl implements UsuarioService{

@@ -15,8 +15,11 @@ public class SecurityConfig {
             HttpSecurity http) throws Exception {
 
         http
+                // H2 Console requiere CSRF deshabilitado
                 .csrf(csrf -> csrf.disable())
-                .headers(headers -> headers.frameOptions(frame -> frame.disable()))
+                // Permite visualizar H2 Console
+                .headers(headers -> headers
+                        .frameOptions(frame -> frame.disable()))
                 .authorizeHttpRequests(auth -> auth
                         .anyRequest().permitAll());
 

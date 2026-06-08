@@ -1,15 +1,15 @@
 package com.nisum.ejerciciojavaspringboot.controller.dto;
 
+
 import com.nisum.ejerciciojavaspringboot.service.dto.TelefonoDto;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.UUID;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.time.LocalDateTime;
-import java.util.List;
-import java.util.UUID;
 
 @Data
 @Builder
