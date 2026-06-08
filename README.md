@@ -24,7 +24,7 @@ En la carpeta del proyecto abrir la consola y ejecutar el comando.
 
 ### Como probar
 
-Para  poder  ejecutar el proyecto  se  debe  ir a la  carpeta ms-user, Abrir  la  consola y ejecutar el comando.
+Para  poder  ejecutar el proyecto  se  debe  ir a la  carpeta ejercicio-java-springboot, Abrir  la  consola y ejecutar el comando.
 
 **gitbash**
 ```sh
